@@ -1,12 +1,12 @@
-
 #include <stdio.h>
 
 /**
- * main -prints the various strings with printf function
+ * main - prints the various strings with printf function
  * Return: Always 0 (success)
  */
 
 int main(void)
+
 {
 	printf("Size of a char: %d byte(s)\n", (sizeof(char));
 	printf("\nSize of an int: %d byte(s)\n", (sizeof(int));
