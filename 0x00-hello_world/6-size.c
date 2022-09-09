@@ -1,15 +1,17 @@
+/*  C program to print size of different data types using pointers  */
+
 #include <stdio.h>
 
 /**
- * main - print the strings
+ * main -prints the various strings with printf function
  * Return: Always 0 (success)
  */
-int main(void)
+int main()
 {
 	printf("Size of a char: %d byte(s)\n", (sizeof(char));
-	printf("Size of an int: %d bytes(s)\n", (sizeof(int));
-	printf("Size of a long int: %d byte(s)\n", (sizeof(long int));
-	printf("Size of a long long int: %d byte(s)\n", (sizeof(long long int));
-	printf("Size of a float: %d byte(s)\n", (sizeof(float));
-	return (0);
+	printf("\nSize of an int: %d byte(s)\n", (sizeof(int));
+	printf("\nSize of a long int: %d bytes(s)\n", (sizeof(long int));
+	printf("\nSize of a long long int: %d bytes(s)\n", (sizeof(long long int));
+	printf("\nSize of a float: %d bytes(s)\n", (sizeof(float)):
+	return 0
 }
