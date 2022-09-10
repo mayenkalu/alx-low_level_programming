@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /*
- * main - assignsa random number to int n any time
+ * main - assigns a random number to int n every time
  * it executes, and prints it
  * Return: Always 0 (success)
  */
