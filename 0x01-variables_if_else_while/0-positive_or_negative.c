@@ -2,14 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
- * main - Entry point
- * Description: 'the program's description'
+/**
+ * main - print the string using the printf function
  * Return: Always 0 (success)
  */
-int main(void)
+int main(void) /*code generates random numbers*/
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
