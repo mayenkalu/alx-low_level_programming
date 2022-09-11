@@ -1,22 +1,29 @@
 #include <stdio.h>
 /**
- * main - prints all possible different combinations of three digits
- * Return: ALways 0 (Success)
+ * main - is entry of program
+ * Return: 0 (succes)
  */
 int main(void)
 {
-	int l, m, n;
-
-	for (l = 48; l <= 58; l++)
+	/*
+	 * prints all combination of 3 different digits once,in accending order
+	 * after each combination follows a coma and a space
+	 */
+	int x, y, z;
+	/*loop through x,1st digit,lowest of the 3, highest possible is 7*/
+	for (x = 0 ; x <= 7 ; x++)
 	{
-		for (m = l + 1; m <= 58; m++)
+	/*loop through y,2nd digit,higher than x by 1,highest possible is 8*/
+		for (y = x + 1 ; y <= 8 ; y++)
 		{
-			for (n = m + 1; n <= 58; n++)
+	/*loop through z,3rd digit,higher than y by 1,highest possible is 9*/
+			for (z = y + 1 ; z <= 9 ; z++)
 			{
-				putchar(l);
-				putchar(m);
-				putchar(n);
-				if (l == 57 && m == 58 && n == 59)
+				putchar((x % 10) + '0');
+				putchar((y % 10) + '0');
+				putchar((z % 10) + '0');
+	/*continues to put coma,space,stop if last highest combination is met*/
+				if (x == 7 && y == 8 && z == 9)
 					continue;
 				putchar(',');
 				putchar(' ');
