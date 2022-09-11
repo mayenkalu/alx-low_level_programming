@@ -9,7 +9,7 @@ int main(void)
 	 * all possible combination of 2 2-digits number
 	 * both seperated by space, and coma after
 	 */
-	int a, b, c;
+	int a, b;
 	/*loop through highest possible of a=98,with 1 less than b*/
 	for (a = 0 ; a <= 98 ; a++)
 	{
