@@ -3,6 +3,8 @@
  * main - print with _putchar function
  * Return: Always 0 (success)
  * */
+int _putchar(int c);
+
 int main(void)
 {
 	_putchar(95);
