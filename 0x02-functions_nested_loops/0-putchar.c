@@ -3,10 +3,8 @@
  * main - print with _putchar function
  * Return: Always 0 (success)
  * */
-int _putchar(void)
-	int char = x;
+int main(void)
 {
-	_putchar();
+	_putchar('a');
 }
-	_putchar('\n');
 	return(0);
