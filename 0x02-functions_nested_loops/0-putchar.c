@@ -6,9 +6,9 @@
  *
  * Return: Always 0 (success)
  */
+int _putchar(ch);
 
 int main(void)
-	int _putchar(char);
 {
 	_putchar(95);
 	_putchar('p');
