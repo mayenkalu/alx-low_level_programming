@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (success)
  */
-int _putchar(ch);
+int _putchar(char); /* Description: 'char' parameter is for characters. */
 
 int main(void)
 {
