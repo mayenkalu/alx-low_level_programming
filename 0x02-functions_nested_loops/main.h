@@ -1,8 +1,8 @@
 /* This is my header file for */
 /* prototype functions in subsequent tasks */
 /* and _putchar function */
-
-int _putchar(int c);
+int main(void);
+int _putchar(char);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
