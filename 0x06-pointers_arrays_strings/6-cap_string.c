@@ -1,21 +1,25 @@
 #include "main.h"
 
 /**
- * string_toupper - changes all lowercase letters of a string
- * to uppercase
+ * string_toupper - makes letters of a string uppercase.
  * @s: string to change
  *
  * Return: the resulting string
  */
 char *string_toupper(char *s)
 {
-	int a;
+	int i, j;
+	char delimeters[] = " \t\n,;.!?\"(){}";
 
-	for (a = 0; s[a] != '\0'; a++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[a] >= 'a' && s[a] <= 'z')
-			s[a] = s[a] - 32;
+		if (s[0] >= 97 && s[0] <= 122)
+		{
+			s[0] = s[0] - 32;
+		}
+			for (j = 0; delimeters[j] != '\0'; j++)
+				if (s[i] == delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
+					s[i + 1] = s[i + 1] - 32;
 	}
-
 	return (s);
 }
