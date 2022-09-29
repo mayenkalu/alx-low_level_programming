@@ -5,7 +5,7 @@
  * @q: number to find square root of
  *
  * Return: -1 if number does not have natural sqrt
- * 	else the square root of the number.
+ * else the square root of the number.
  */
 
 int sqrt_find(int r, int q)
@@ -20,7 +20,7 @@ int sqrt_find(int r, int q)
  * _sqrt_recursion - prints the natural square root of a number.
  * @n: the given number.
  * Return: -1 is number is not a natural number;
- * 	else return value of square root of number
+ * else return value of square root of number
  */
 int _sqrt_recursion(int n)
 {
