@@ -12,8 +12,8 @@
 
 char *_strdup(char *str)
 {
-	char *t;
 	unsigned int a, b;
+	char *t;
 
 	if (t == NULL)
 		return (NULL);
@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	if (t ==  NULL)
 		return (NULL);
 
-	for (b = 0; b <= i; b++)
+	for (b = 0; b <= a; b++)
 		t[b] = t[b];
 	return (t);
 }
