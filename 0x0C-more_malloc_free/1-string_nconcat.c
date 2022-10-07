@@ -9,44 +9,41 @@
  *
  * Return: Null if error or char pointer to the new joined place in memory
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a;
-	unsigned int b;
-	unsigned int c;
-	char *x;
+	char *arr;
+	unsigned int a, b, c, x;
 
 	if (s1 == NULL)
-		a = 0;
-	else
-	{
-		for (a = 0; s1[a]; a++)
-			;
-	}
+		s1 = "";
 
 	if (s2 == NULL)
-		b = 0;
-	else
-	{
-		for (b = 0; s2[b]; b++)
-			;
-	}
+		s2 = "";
 
-	if (b > n)
-		b = n;
-	x = malloc(sizeof(char) * (a + b + 1));
+	for (a = 0; s1[a] != '\0'; a++)
+		;
 
-	if (x == NULL)
+	for (b = 0; s2[b] != '\0'; b++)
+		;
+
+	if (n > b)
+		n = b;
+
+	c = a + n;
+
+	arr = malloc(c + 1);
+
+	if (c == NULL)
 		return (NULL);
 
-	for (c = 0; c < a; c++)
-		x[c] = s1[c];
+	for (x = 0; x < c; x++)
+		if (x < a)
+			arr[x] = s1[x];
+		else
+			arr[x] = s2[x - a];
 
-	for (c = 0; c < b; c++)
-		x[c + a] = s2[c];
+	arr[x] = '\0';
 
-	x[a + b] = '\0';
+	return (arr);
 
-	return (x);
 }
