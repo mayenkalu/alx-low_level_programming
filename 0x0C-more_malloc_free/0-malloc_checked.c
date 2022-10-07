@@ -7,15 +7,13 @@
  *
  * Return: pointer to the allocated memory or exit normal with statis 98
  */
-
 void *malloc_checked(unsigned int b)
 {
-	void *m;
+	char *r;
 
-	m = malloc(b);
+	r = malloc(b);
 
-	if (m == NULL)
+	if (r == NULL)
 		exit(98);
-
-	return (m);
+	return (r);
 }
