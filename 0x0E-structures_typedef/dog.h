@@ -1,4 +1,3 @@
-/* A header file with prototypes for structure in C */
 #ifndef _DOG_H_
 #define _DOG_H_
 
