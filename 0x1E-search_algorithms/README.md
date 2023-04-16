@@ -1,13 +1,13 @@
 # C - Search Algorithms :page_with_curl: 0x1E-search_algorithms
+A **search algorithm** is a method or a procedure used to find a particular item or value within a collection of data, such as an array or a list.
 
-## About this project:
-- In this project, I learnt and practiced ;
-- What is a search algorithm
-- What is a linear search
-- What is a binary search
-- What is the best search algorithm to use depending on your needs
+A **linear search**, also known as sequential search, is a simple search algorithm that checks each element in a collection one by one, starting from the first element until the desired element is found or the end of the collection is reached. Linear search is easy to implement but can be inefficient for large data sets.
 
-## Files tasks descriptions:
+A **binary search**, also known as half-interval search, is a search algorithm that works on sorted collections of data. It repeatedly divides the search interval in half until the desired element is found or the interval is empty. Binary search is more efficient than linear search for large data sets because it has a time complexity of O(log n), where n is the size of the data set.
+
+The **best search** algorithm to use depends on the size of the data set, whether the data is sorted, and how often you need to perform the search. Linear search is suitable for small data sets, but for larger data sets, binary search is a better choice if the data is sorted. If the data is unsorted, other algorithms such as hash table or tree-based search algorithms may be more appropriate. 
+
+## Task Descriptions:
 * [search_algos.h](./search_algos.h): Header file containing definitions and
 prototypes for all types and functions.
 
